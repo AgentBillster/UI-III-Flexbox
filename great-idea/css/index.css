@@ -3,64 +3,346 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+  width: 90%;
+  margin: auto;
+}
+
+/* styling for nav! */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* styling for section 1 */
+
+h1 {
+  font-size: 70px;
+}
+
+.sec1 {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.iod {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.button {
+  border: 1px solid black;
+  width: 150px;
+  padding: 10px;
+  margin: auto;
+}
+
+.photo {
+  padding: 20px;
+  margin: 20px;
+}
+
+/* styling for section 2! */
+
+.subsec1 {
+  display: flex;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.subsec2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 20px;
+}
+
+.middle-img {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* styling for address section */
+
+address {
+  border-top: 1px solid black;
+  margin-top: 2%;
+  padding: 20px;
+  margin: 20px;
+}
+
+footer {
+  text-align: center;
+}
+
+/* ------------------ STYLING FOR SERVICES PAGE STARTS HERE ------------------ */
+
+.services-header-img {
+  padding: 10px;
+  margin: 10px;
+  height: 15%;
+  width: 97%;
+}
+
+#servID {
+  font-size: 30px;
+}
+
+.servbox {
+  padding: 10px;
+  margin: 10px;
+}
+
+.row1 {
+  display: flex;
+}
+
+.row2 {
+  display: flex;
+}
+
+.row3 {
+  display: flex;
+}
+
+.dd {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.ux {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.dm {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.wd {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.id {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.ad {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.ddbutton {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 20px;
+  width: 45%;
+}
+
+.uxbutton {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 20px;
+  width: 45%;
+}
+
+.dmbutton {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 20px;
+  width: 45%;
+}
+
+.wdbutton {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 20px;
+  width: 45%;
+}
+
+.idbutton {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 20px;
+  width: 45%;
+}
+
+.adbutton {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 20px;
+  width: 45%;
+}
+
+li {
+  list-style-type: square;
+  list-style-position: inside;
+}
