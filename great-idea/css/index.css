@@ -342,7 +342,22 @@ footer {
   width: 45%;
 }
 
+.sec3 {
+  display: flex;
+  align-items: center;
+  border-top: 3px solid black;
+  margin-top: 20px;
+}
+
 li {
   list-style-type: square;
   list-style-position: inside;
+}
+
+.wal {
+  height: 310px;
+}
+
+ul {
+  margin-top: 20px;
 }
